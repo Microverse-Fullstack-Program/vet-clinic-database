@@ -1,3 +1,15 @@
+# Vet Clinic
+
+## Getting Started
+
+This repository includes files with plain SQL that can be used to recreate a database:
+
+Use schema.sql to create all tables.
+Use data.sql to populate tables with sample data.
+Check queries.sql for examples of queries that can be run on a newly created database.
+
+**Important note**: _this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!_
+
 <a name="readme-top"></a>
 
 <!--
@@ -21,8 +33,6 @@ REQUIRED SECTIONS:
 
 After you're finished please remove all the comments and instructions!
 -->
-
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -79,7 +89,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Store animals record**
+- **DataBase for managing animal clinic**
+- **Animal Table with sample records**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +100,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Coming Soon](<replace-with-your-deployment-URL>)
+- [Not available](<replace-with-your-deployment-URL>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,13 +108,11 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need to install PostgreSQL.
+In order to run this project you need: PostgreSQL or any other SQL database.
 
 <!--
 Example command:
@@ -115,19 +124,13 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
-0. Install git if not already installed
-1. Open terminal in VScode or Bash.
-2. Navigate to the directory where you want clone the copy of this repository
-3. Create new directory [optional]
-4. Clone the repo using the below command
- > git clone https://github.com/Microverse-Fullstack-Program/vet-clinic-database
-5. Alternatively, you can download the zip file of your project by clicking on the Code button on the right side of your project page and clicking on Download ZIP
+- Clone [this repository](https://github.com/Microverse-Fullstack-Program/vet-clinic-database) to your desired folder.
+- Alternatively, you can download the zip file of your project by clicking on the Code button on the right side of your project page and clicking on Download ZIP
 
 
 ### Install
 
-Install this project with:
+Install this project with: [Install PostgreSQL](https://www.postgresql.org/download/)
 
 <!--
 Example command:
@@ -142,17 +145,14 @@ Example command:
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+- Start Postgres server.
+- Run psql.
+- Create table.
 
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following command: **Not available**.
 
 <!--
 Example command:
@@ -164,7 +164,7 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: **Not available**.
 
 <!--
 Example:
@@ -192,11 +192,10 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+> In the future work, I will add the following tables 
+- [ ] **Employes Table**
+- [ ] **Owner Table**
+- [ ] **Visits Table**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -236,13 +235,13 @@ If you like this project...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **For what purpose this project can be used**
 
-  - [Answer_1]
+  - For educational purpose. Any one who want learn relational database.
 
-- **[Question_2]**
+- **Can I use this project for my website?**
 
-  - [Answer_2]
+  - Yes of course. It's MIT license, feel free to use as you want.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
