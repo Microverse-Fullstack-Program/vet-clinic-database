@@ -48,7 +48,7 @@ After you're finished please remove all the comments and instructions!
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -98,8 +98,6 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Not available](<replace-with-your-deployment-URL>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,7 +110,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need: PostgreSQL or any other SQL database.
+In order to run this project you need: **PostgreSQL or any other SQL database**.
 
 <!--
 Example command:
@@ -192,7 +190,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> In the future work, I will add the following tables 
+In the future work, I will add the following tables 
 - [ ] **Employes Table**
 - [ ] **Owner Table**
 - [ ] **Visits Table**
@@ -213,9 +211,7 @@ Feel free to check the [issues page](https://github.com/Microverse-Fullstack-Pro
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+ If you like this project give a ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,17 +219,13 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank [Microverseinc](https://github.com/microverseinc) for.
-
-* [curriculum-template-databases](https://github.com/microverseinc/curriculum-template-databases)
+I would like to thank [Microverseinc](https://github.com/microverseinc) for the [curriculum-template-databases](https://github.com/microverseinc/curriculum-template-databases)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **For what purpose this project can be used**
 
@@ -250,7 +242,5 @@ If you like this project...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
