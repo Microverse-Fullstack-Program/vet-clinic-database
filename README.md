@@ -1,16 +1,14 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
+# Vet Clinic
 
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+Use schema.sql to create all tables.
+Use data.sql to populate tables with sample data.
+Check queries.sql for examples of queries that can be run on a newly created database.
+
+**Important note**: _this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!_
 
 <a name="readme-top"></a>
 
@@ -35,8 +33,6 @@ REQUIRED SECTIONS:
 
 After you're finished please remove all the comments and instructions!
 -->
-
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -52,7 +48,7 @@ After you're finished please remove all the comments and instructions!
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -63,30 +59,23 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Vet clinic database <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+**Vet clinic database** is a relational database created to store records about _animals, animals' owners, clinic employees and visits_.
 
-**[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> The tech stack in this project includes.
 
 <details>
   <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
 </details>
 
 <details>
   <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
 </details>
 
 <details>
@@ -100,11 +89,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **DataBase for managing animal clinic**
+- **Animal Table with sample records**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,9 +98,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
+- Not available
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,13 +106,11 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need: **PostgreSQL or any other SQL database**.
 
 <!--
 Example command:
@@ -140,20 +122,13 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+- Clone [this repository](https://github.com/Microverse-Fullstack-Program/vet-clinic-database) to your desired folder.
+- Alternatively, you can download the zip file of your project by clicking on the Code button on the right side of your project page and clicking on Download ZIP
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
-Install this project with:
+Install this project with: [Install PostgreSQL](https://www.postgresql.org/download/)
 
 <!--
 Example command:
@@ -168,17 +143,14 @@ Example command:
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+- Start Postgres server.
+- Run psql.
+- Create table.
 
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following command: **Not available**.
 
 <!--
 Example command:
@@ -190,7 +162,7 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: **Not available**.
 
 <!--
 Example:
@@ -206,19 +178,11 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Chere Lemma**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/cherelemma)
+- Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chere-lemma27211613)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,11 +190,10 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+In the future work, I will add the following tables 
+- [ ] **Employes Table**
+- [ ] **Owner Table**
+- [ ] **Visits Table**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,7 +203,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Microverse-Fullstack-Program/vet-clinic-database/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +211,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+ If you like this project give a ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,9 +219,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank [Microverseinc](https://github.com/microverseinc) for the [curriculum-template-databases](https://github.com/microverseinc/curriculum-template-databases)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -268,15 +227,13 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **For what purpose this project can be used**
 
-- **[Question_1]**
+  - For educational purpose. Any one who want learn relational database.
 
-  - [Answer_1]
+- **Can I use this project for my website?**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - Yes of course. It's MIT license, feel free to use as you want.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -285,7 +242,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
