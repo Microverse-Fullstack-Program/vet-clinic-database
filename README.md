@@ -1,3 +1,17 @@
+# curriculum-databases-projects-template
+
+> This template should be used for database related projects at Microverse.
+> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+
+
+## Getting Started
+
+This repository includes files with plain SQL that can be used to recreate a database:
+
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+
 <a name="readme-top"></a>
 
 <!--
@@ -49,23 +63,30 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Vet clinic database <a name="about-project"></a>
+# 📖 [your_project_name] <a name="about-project"></a>
 
-**Vet clinic database** is a relational database created to store records about _animals, animals' owners, clinic employees and visits_.
+> Describe your project in 1 or 2 sentences.
 
+**[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> The tech stack in this project includes.
+> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
 </details>
 
 <details>
   <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
 </details>
 
 <details>
@@ -79,7 +100,11 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Store animals record**
+> Describe between 1-3 key features of the application.
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +114,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Coming Soon](<replace-with-your-deployment-URL>)
+- [Live Demo Link](<replace-with-your-deployment-URL>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +128,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need to install PostgreSQL.
+In order to run this project you need:
 
 <!--
 Example command:
@@ -116,14 +141,15 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-0. Install git if not already installed
-1. Open terminal in VScode or Bash.
-2. Navigate to the directory where you want clone the copy of this repository
-3. Create new directory [optional]
-4. Clone the repo using the below command
- > git clone https://github.com/Microverse-Fullstack-Program/vet-clinic-database
-5. Alternatively, you can download the zip file of your project by clicking on the Code button on the right side of your project page and clicking on Download ZIP
 
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
+--->
 
 ### Install
 
@@ -180,11 +206,19 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Chere Lemma**
+> Mention all of the collaborators of this project.
 
-- GitHub: [@githubhandle](https://github.com/cherelemma)
-- Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chere-lemma27211613)
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,7 +240,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Microverse-Fullstack-Program/vet-clinic-database/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -224,9 +258,9 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank [Microverseinc](https://github.com/microverseinc) for.
+> Give credit to everyone who inspired your codebase.
 
-* [curriculum-template-databases](https://github.com/microverseinc/curriculum-template-databases)
+I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
