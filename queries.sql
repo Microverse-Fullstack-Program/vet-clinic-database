@@ -66,8 +66,7 @@ SELECT a.name FROM animals a
 	JOIN owners o ON a.owner_id = o.id
 	WHERE  o.full_name = 'Dean Winchester' AND a.escape_attempts = o;
 	
-SELECT o.full_name, count(a.owner_id) FROM animals a JOIN owners o 
-	on a.owner_id = o.id group by owner_id	
+SELECT o.full_name, count(a.owner_id) FROM animals a JOIN owners o on a.owner_id = o.id group by owner_id	
 
 -----------------------------------------------------------------------------------
 SELECT a.name as Animal_Name, vi.date_of_visit from animals a 
