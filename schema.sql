@@ -17,7 +17,7 @@ ALTER TABLE animals ADD owner_id INTEGER
 ALTER TABLE animals ADD CONSTRAINT fko FOREIGN KEY(owner_id) REFERENCES owners(ID)
 COMMIT
 
-CREATE TABLE vets (ID SERIAL PRIMARY KEY,	name VARCHAR(50),	age INTEGER,	date_of_graduation DATE	)
+CREATE TABLE vets (ID SERIAL PRIMARY KEY, name VARCHAR(50), age INTEGER, date_of_graduation DATE	)
 
 CREATE TABLE specializations (
 	species_id INTEGER,
