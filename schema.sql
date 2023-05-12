@@ -25,3 +25,10 @@ CREATE TABLE specializations (
 	FOREIGN KEY (species_id) REFERENCES species(ID),
 	FOREIGN KEY (vets_id) REFERENCES vets(ID)
 	)
+
+CREATE TABLE visits (
+	animal_id INTEGER,
+	vets_id INTEGER,
+	FOREIGN KEY (animal_id) REFERENCES animals (ID),
+	FOREIGN KEY (vets_id) REFERENCES vets(ID)
+	)
