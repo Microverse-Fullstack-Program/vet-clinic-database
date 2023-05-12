@@ -99,3 +99,14 @@ SELECT a.name AS Animal_Name, a.date_of_birth, a.escape_attempts, a.neutered, a.
 	ve.name AS Vet_Name, ve.age as Vet_Age, ve.date_of_graduation, vi.date_of_visit FROM animals a 
 	JOIN visits vi ON vi.animal_id = a.id JOIN vets ve On ve.id = vi.vets_id ORDER BY vi.date_of_visit DESC LIMIT 1 ;
 	
+ SELECT count(*) from visits vi 
+ 	JOIN vets ON vi.vets_id = vets.id JOIN animals a ON vi.animal_id = a.id
+	FULL JOIN specializations ss ON ss.vets_id = vets.id AND a.species_id = ss.species_id
+	WHERE ss.species_id IS NULL
+
+ SELECT sp.name AS Speciality, count(*) from visits vi 
+ 	JOIN vets ON vi.vets_id = vets.id JOIN animals a ON vi.animal_id = a.id
+	LEFT JOIN specializations ss ON ss.vets_id = vets.id AND a.species_id = ss.species_id
+	JOIN species sp ON sp.id = a.species_id
+	WHERE ss.species_id IS NULL AND vets.name = 'Maisy Smith' 
+	GROUP BY sp.name ORDER BY count DESC LIMIT 1
