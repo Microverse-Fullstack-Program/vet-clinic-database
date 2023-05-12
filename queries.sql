@@ -67,16 +67,4 @@ SELECT a.name FROM animals a
 	WHERE  o.full_name = 'Dean Winchester' AND a.escape_attempts = o;
 	
 SELECT o.full_name, count(a.owner_id) FROM animals a JOIN owners o 
-	on a.owner_id = o.id group by owner_id	
-	
- SELECT count(*) from visits vi 
- 	JOIN vets ON vi.vets_id = vets.id JOIN animals a ON vi.animal_id = a.id
-	FULL JOIN specializations ss ON ss.vets_id = vets.id AND a.species_id = ss.species_id
-	WHERE ss.species_id IS NULL
-
- SELECT sp.name AS Speciality, count(*) from visits vi 
- 	JOIN vets ON vi.vets_id = vets.id JOIN animals a ON vi.animal_id = a.id
-	LEFT JOIN specializations ss ON ss.vets_id = vets.id AND a.species_id = ss.species_id
-	JOIN species sp ON sp.id = a.species_id
-	WHERE ss.species_id IS NULL AND vets.name = 'Maisy Smith' 
-	GROUP BY sp.name ORDER BY count DESC LIMIT 1	
+	on a.owner_id = o.id group by owner_id		
