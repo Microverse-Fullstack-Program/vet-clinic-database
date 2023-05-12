@@ -25,3 +25,39 @@ UPDATE animals SET owner_id =
 		ELSE (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
 	END
 COMMIT
+
+-----------------------------------------------------------------------------
+
+INSERT INTO VETS (NAME, AGE, date_of_graduation) 
+VALUES ('William Tatcher', 45, '4/23/2000'), ('Maisy Smith', 26, '1/17/2019'), ('Stephanie Mendez', 64, '5/4/1981'), ('Jack Harkness', 38, '6/8/2008')
+
+INSERT INTO specializations (species_id, vets_id) 
+	SELECT s.id, v.id FROM vets v, species s JOIN animals a ON s.id = a.id WHERE s.name = 'Pokemon' AND v.name = 'William Tatcher'
+INSERT INTO specializations (species_id, vets_id) 
+	(SELECT s.id, v.id FROM vets v, species s JOIN animals a ON s.id = a.id WHERE s.name IN ('Digimon', 'Pokemon') AND v.name = 'Stephanie Mendez')
+INSERT INTO specializations (species_id, vets_id) 
+	SELECT s.id, v.id FROM vets v, species s JOIN animals a ON s.id = a.id WHERE s.name = 'Digimon' AND v.name = 'Jack Harkness'
+		
+INSERT INTO visits (animal_id, vets_id, date_of_visit)
+ VALUES
+   (1, 1, '24 May 2020'),
+   (1, 3, '22 Jul 2020'),
+   (2, 4, '2 Feb 2021'),
+   (3, 2, '5 Jan 2020'),
+   (3, 2, '8 Mar 2020'),
+   (3, 2, '14 May 2020'),
+   (4, 3, '4 May 2021'),
+   (5, 4, '24 Feb 2021'),
+   (6, 2, '21 Dec 2019'),
+   (6, 1, '10 Aug 2020'),
+   (6, 2, '7 April 2021'),
+   (7, 3, '29 Sep 2019'),
+   (8, 4, '3 Oct 2020'),
+   (8, 4, '4 Nov 2020'),
+   (9, 2, '24 Jan 2019'),
+   (9, 2, '15 May 2019'),
+   (9, 2, '27 Feb 2020'),
+   (9, 2, '7 Aug 2020'),
+   (10, 3, '24 May 2020'),
+   (10, 1, '11 Jan 2021');
+
