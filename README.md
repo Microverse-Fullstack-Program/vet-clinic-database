@@ -190,10 +190,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-In the future work, I will add the following tables 
-- [ ] **Employes Table**
-- [ ] **Owner Table**
-- [ ] **Visits Table**
+In the future work, 
+- [ ] **Treatment Table**
+- [ ] **Invoices Table**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
