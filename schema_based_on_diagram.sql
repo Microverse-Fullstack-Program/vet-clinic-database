@@ -15,6 +15,8 @@ CREATE TABLE IF NOT EXISTS medical_histories (
 	PRIMARY KEY(ID)
 )
 
+CREATE INDEX ON medical_histories (patient_id);
+
 CREATE TABLE IF NOT EXISTS treatments (
 	ID INT GENERATED ALWAYS AS IDENTITY,
 	type VARCHAR(20),
@@ -29,6 +31,10 @@ CREATE TABLE IF NOT EXISTS medical_treatments (
 	PRIMARY KEY(ID)
 )
 
+CREATE INDEX ON medical_histories_has_treatments (medical_history_id);
+
+CREATE INDEX ON medical_histories_has_treatments (treatment_id);
+
 CREATE TABLE IF NOT EXISTS invoices (
 	ID INT GENERATED ALWAYS AS IDENTITY,
 	total_amount DECIMAL,
@@ -37,6 +43,8 @@ CREATE TABLE IF NOT EXISTS invoices (
 	medical_history_id INT REFERENCES medical_histories(id),
 	PRIMARY KEY(ID)
 )
+
+CREATE INDEX ON invoices (medical_history_id);
 
 CREATE TABLE IF NOT EXISTS invoice_items (
 	ID INT GENERATED ALWAYS AS IDENTITY,
@@ -47,3 +55,7 @@ CREATE TABLE IF NOT EXISTS invoice_items (
 	treatment_id INT REFERENCES treatments(id),
 	PRIMARY KEY(ID)
 )
+
+CREATE INDEX ON invoice_items (invoice_id);
+
+CREATE INDEX ON invoice_items (treatment_id);
