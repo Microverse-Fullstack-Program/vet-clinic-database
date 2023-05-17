@@ -184,6 +184,12 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/chere-lemma27211613)
 
+👤 **Okpara Blessing Oluchi**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
