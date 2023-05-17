@@ -149,3 +149,10 @@ SELECT a.name AS Animal_Name, a.date_of_birth, a.escape_attempts, a.neutered, a.
 	JOIN species sp ON sp.id = a.species_id
 	WHERE ss.species_id IS NULL AND vets.name = 'Maisy Smith' 
 	GROUP BY sp.name ORDER BY count DESC LIMIT 1
+	
+--------------------------------------------------------------------
+// Database Perofmance and Audit test queries
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vets_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
